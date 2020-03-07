@@ -1,0 +1,2 @@
+class PanthiumItem < ApplicationRecord
+end
