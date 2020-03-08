@@ -1,5 +1,5 @@
 class PanthiumItemsController < ApplicationController
   def index
-    @panthiumitems = PanthiumItem.all?
+    @panthiumitems = PanthiumItem.all
   end
 end
