@@ -1,9 +1,10 @@
 .panthiumcontainer {
   // z-index: 10;
-  display: flex;
+  // display: flex;
   width: 100vw;
   height: 100vh;
   margin: 10px;
+  padding: 10px;
   background-image: url(asset_path('panthium-background.png'));
   // background-image: 'panthium-background.png';
   background-position: cover;

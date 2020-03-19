@@ -1,7 +1,14 @@
-<div class="container">
+<div class="panthiumcontainer">
 
   <h1>Write up stuff about services here</h1>
     <h1>Panthium Services are:</h1>
+
+  <div class="textcontainer">
+    <ul><% @services.each do |service| %>
+      <li><%= service.name %>:
+          <%= service.description %></li>
+      <% end %></ul>
+  </div>
 
     <div class="row justify-content-left">
       <div class="col-6">
@@ -11,10 +18,5 @@
     </div>
 </div>
 
-  <div class="textcontainer">
-    <p><% @service.each do |service| %>
-      <%= @service.name %>
-      <%= @service.description %>
-      <% end %>
-    </p>
-  </div>
+
+

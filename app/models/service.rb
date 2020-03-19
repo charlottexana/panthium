@@ -1,3 +1,3 @@
 class Service < ApplicationRecord
-  belongs_to :pages
+  # belongs_to :pages
 end
