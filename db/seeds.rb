@@ -1,8 +1,12 @@
 puts "Creating all your dummy data shithead :)"
 
+sleep(3)
+
 Service.destroy_all
 
 puts "Starting with dummy services"
+
+sleep(3)
 
 service = Service.new(
   name: "Ad Hoc Consulting",

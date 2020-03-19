@@ -4,11 +4,11 @@ class PagesController < ApplicationController
   end
 
   def new
-    @pages = Page.new
+    @page = Page.new
   end
 
   def create
-    @page = Page.new(page_params)
+    @page = Page.new(:id)
     @page.save
   end
 
@@ -36,8 +36,8 @@ class PagesController < ApplicationController
 
   private
 
-  def service_params
-    params.require(:service).permit(:name, :price, :description)
-  end
+  # def page_params
+  #   params.require(:page).permit(:name, :rate, :description)
+  # end
 
 end
