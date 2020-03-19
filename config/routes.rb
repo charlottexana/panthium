@@ -1,13 +1,13 @@
 Rails.application.routes.draw do
+
   # devise_for :users
-  root to: 'panthium_items#index'
+  root to: 'pages#index'
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  resources :panthium_items do
+  resources :pages do
   end
 
-  resources :services do
-  end
+  resources :services, only: [:index, :new, :create, :destroy, :show, :update]
+  resources :enquiries, only: [:new, :create, :show]
 
-  resources :enquiries do
-  end
 end
