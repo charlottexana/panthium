@@ -1,9 +1,20 @@
-.container {
-  // margin: 20px;
+.panthiumcontainer {
   // z-index: 10;
-  width: 100%;
-  // margin: 10px;
   display: flex;
+  width: 100vw;
+  height: 100vh;
+  margin: 10px;
+  background-image: url(asset_path('panthium-background.png'));
+  // background-image: 'panthium-background.png';
+  background-position: cover;
+  p {
+    text-align: left;
+  }
+}
+
+.textcontainer {
+  margin: 20px;
+  padding: 20px;
 }
 
 .box-container {

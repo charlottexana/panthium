@@ -10,3 +10,11 @@
       </div>
     </div>
 </div>
+
+  <div class="textcontainer">
+    <p><% @service.each do |service| %>
+      <%= @service.name %>
+      <%= @service.description %>
+      <% end %>
+    </p>
+  </div>
