@@ -1,7 +1,28 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+puts "Creating all your dummy data shithead :)"
+
+Service.destroy_all
+
+puts "Starting with dummy services"
+
+service = Service.new(
+  name: "Ad Hoc Consulting",
+  description: "Day rate consulting for data protection needs",
+  rate: "£600"
+  )
+service.save
+
+service = Service.new(
+  name: "Compliance Audit",
+  description: "GDPR Compliance Audit and Recommendations",
+  rate: "£2,500"
+  )
+service.save
+
+service = Service.new(
+  name: "Audit Implementation",
+  description: "Rather than quoting the law at clients, we work on a contract basis to implement our findings into your organisation, working with teams on a day rate",
+  rate: "£600"
+  )
+service.save
+
+puts "Services created... all done now - go code ;)"
