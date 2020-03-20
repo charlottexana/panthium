@@ -2,12 +2,13 @@
   // z-index: 10;
   // display: flex;
   width: 100vw;
-  height: 100vh;
+  height: 70vh;
   margin: 10px;
   padding: 10px;
   background-image: url(asset_path('panthium-background.png'));
   // background-image: 'panthium-background.png';
   background-position: cover;
+  box-shadow: 2px 2px 4px #888888;
 }
 
 .textcontainer {
@@ -23,7 +24,7 @@
   padding: 5px;
   display: flex;
   flex-direction: column;
-  box-shadow: 2px 5px #f2f2f2;;
+  box-shadow: 2px 5px #f2f2f2;
 }
 
 .boxes {
