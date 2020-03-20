@@ -9,6 +9,8 @@ gem 'rails', '~> 5.2.4', '>= 5.2.4.1'
 
 gem 'cloudinary', '~> 1.12.0'
 
+gem 'bootstrap', '~> 4.4.1'
+
 # Use postgresql as the database
 gem 'pg'
 # Use Puma as the app server
