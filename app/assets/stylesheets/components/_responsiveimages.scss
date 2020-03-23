@@ -1,0 +1,19 @@
+#content-desktop {
+  display: block;
+  background-image: 'logo.png';
+  color: white;
+}
+
+#content-mobile {
+  display: none;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  #content-desktop {
+    display: none;
+  }
+  #content-mobile {
+    display: block;
+  }
+}
