@@ -27,8 +27,12 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #33b3a6;
-  // background-image: 'circle.jpg';
+  // background-color: #33b3a6;
+  // background-image: '/panthium-banner.jpg';
+  background-image: url(asset_path('panthium-banner.jpg'));
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 body {
