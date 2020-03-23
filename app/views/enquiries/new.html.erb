@@ -1,13 +1,29 @@
-<div class="container">
-  <h1>This where people can leave an enquiry form</h1>
-</div>
+<%= render 'shared/navbar' %>
 
-<div class="container">
-    <%= simple_form_for @enquiry do |f| %>
-    <%= f.input :name, as: :string %>
-    <%= f.input :company_name, as: :string %>
-    <%= f.input :email_address, as: :string %>
-    <%= f.input :phone_number, as: :string %>
-    <%= f.button :submit, "Submit your data enquiry", class: "btn btn-primary" %>
-    <% end %>
-</div>
+<div class="textcontainerenquiry">
+  <h1>This where people can leave an enquiry form</h1>
+
+
+  <div class="py-5 text-left">
+    <div class="mb-3">
+      <%= simple_form_for @enquiry do |f| %>
+      <%= f.input :name, as: :string %>
+      <%= f.input :company_name, as: :string %>
+      <%= f.input :email_address, as: :string %>
+      <%= f.input :phone_number, as: :string %>
+      <%= f.button :submit, "Submit your data enquiry", class: "btn btn-warning btn-block" %>
+      <% end %>
+    </div>
+      <hr class="mb-4">
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="same-address">
+          <label class="custom-control-label" for="same-address">Shipping address is the same as my billing address</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="save-info">
+          <label class="custom-control-label" for="save-info">Save this information for next time</label>
+        </div>
+  </div>
+  </div>
+  </div>
+
