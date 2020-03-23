@@ -1,4 +1,4 @@
-console.log('Hello World from Webpacker')
+console.log('Hey shithead Bowe ;)')
 import 'jquery';
 import 'bootstrap';
 /* eslint no-console:0 */
