@@ -7,7 +7,10 @@ Rails.application.routes.draw do
   resources :pages do
   end
 
-  resources :services, only: [:index, :new, :create, :destroy, :show, :update]
-  resources :enquiries, only: [:new, :create, :show]
+  resources :services do
+  end
+
+  resources :enquiries do
+  end
 
 end
