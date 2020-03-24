@@ -1,6 +1,54 @@
+<%= render 'shared/navbar' %>
+
+<div class="formstyle">
+
+    <div class="container">
+      <h1>Get in Touch</h1>
+        <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+          <div align="center">
+
+            <div class="py-3 text-left">
+              <div class="mb-3">
+                <%= simple_form_for @enquiry do |f| %>
+                <%= f.input :name, as: :string %>
+                <%= f.input :company_name, as: :string %>
+                <%= f.input :phone_number, as: :string %>
+                <%= f.input :email_address, as: :string %>
+                <%= f.button :submit, "Submit your data enquiry", class: "btn btn-warning btn-block" %>
+                <% end %>
+              </div>
+
+              <hr class="mb-4">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="same-address">
+                  <label class="custom-control-label" for="same-address">Accept Terms and Conditions</label>
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="save-info">
+                  <label class="custom-control-label" for="save-info">Accept Privacy Policy</label>
+            <%= image_tag "ucl.jpg", alt: "", width: 100 %>
+                </div>
+
+              </div>
+
+            </div>
+    </div>
+  </div>
 
 
-<h1>Pages#enquiries</h1>
-<p>Find me in app/views/pages/enquiries.html.erb</p>
+
+
+
+
+<!--
+<div class="container">
+ <div id=”content-desktop”>
+This is the content that will display on DESKTOPS.
+</div>
+
+<div id=”content-mobile”>
+This is the content that will display on MOBILE DEVICES.
+</div>
+</div> -->
 
 
